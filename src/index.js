@@ -1,12 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+// Import jQuery trước
+import 'jquery/dist/jquery.min.js';
+// Import popper vào
+import 'popper.js/dist/popper.min.js';
+// Import Bootstrap
+import 'bootstrap/dist/js/bootstrap';
+// Import CSS Bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+import { Provider } from 'react-redux';
+import store from './store'
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,0 +1,24 @@
+.game-container {
+  background-image: url(./assets/images/bgGame.png);
+  background-size: cover;
+  height: 100vh;
+  font-family: "gameOanTuTi";
+}
+
+@font-face {
+  font-family: "gameOanTuTi";
+  src: url(./assets//fonts/Pony.ttf);
+}
+
+.img-thumbnail {
+  cursor: pointer;
+}
+.imgSelected {
+  border: 8px solid #ffc107;
+  border-radius: 10px;
+}
+
+.selected-bubble {
+  border: 7px solid #45d994;
+  border-radius: 0.4em;
+}
